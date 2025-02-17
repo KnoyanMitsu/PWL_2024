@@ -46,3 +46,6 @@ Route::get('/user/{name?}', function ($name='John'){
 Route::get('/posts/{post}/comments/{comment}', function($postId, $commentId) {
         return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
 });
+
+
+Route::get('/greeting', [WelcomeController::class,'greeting']);
